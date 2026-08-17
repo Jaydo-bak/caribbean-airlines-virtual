@@ -1,0 +1,30 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Human Resources | Caribbean Airlines Virtual</title><link rel="stylesheet" href="styles.css"><style>
+.hr-page{padding:80px 8%;background:var(--bg,#faf5fc);min-height:calc(100vh - 76px)}.hr-hero{max-width:900px;margin:auto;text-align:center}.hr-hero h1{font-size:clamp(42px,6vw,72px);line-height:1;margin:0 0 20px;color:var(--deep,#3c096c)}.hr-hero h1 span{color:var(--red,#e83e8c)}.hr-hero p{color:var(--muted,#765f80);font-size:18px}.hr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:50px auto;max-width:1100px}.hr-card{padding:30px;background:var(--white,#fff);border:1px solid var(--line,#ead9f0);border-radius:12px}.hr-card h3{color:var(--deep,#3c096c);margin-top:0}.hr-card p{font-size:14px;color:var(--muted,#765f80)}.hr-apply{max-width:800px;margin:20px auto;background:var(--white,#fff);padding:35px;border-radius:12px;border:1px solid var(--line,#ead9f0)}.hr-apply label{display:block;font-weight:700;margin:15px 0 6px}.hr-apply input,.hr-apply select,.hr-apply textarea{width:100%;padding:12px;border:1px solid var(--line,#ead9f0);border-radius:6px;box-sizing:border-box}.hr-apply textarea{min-height:130px}@media(max-width:800px){.hr-grid{grid-template-columns:1fr}}</style></head>
+<body><header class="site-header"><a class="brand" href="index.html#home"><img class="brand-logo" src="logo.png" alt="Caribbean Airlines Virtual"><span><strong>CARIBBEAN AIRLINES</strong><small>VIRTUAL</small></span></a><button class="menu-toggle" aria-label="Toggle navigation">☰</button><nav id="nav"><a href="index.html#home">Home</a><a href="index.html#about">About</a><a href="index.html#routes">Routes</a><a href="index.html#fleet">Fleet</a><a href="resources.html">Resources</a><a href="index.html#operations">Operations</a><a href="index.html#community">Community</a><a href="hr.html">HR</a><a class="nav-login" href="https://vamsys.io/login/caribbean" target="_blank" rel="noopener">Pilot Login</a></nav></header>
+<main class="hr-page"><section class="hr-hero"><p class="eyebrow">HUMAN RESOURCES</p><h1>Join the team<br><span>behind the airline.</span></h1><p>Caribbean Airlines Virtual is built by aviation enthusiasts. Our HR department helps recruit, support and develop the staff who keep the virtual airline operating.</p></section>
+<section class="hr-grid"><article class="hr-card"><h3>✈️ Flight Operations</h3><p>Manage schedules, routes, aircraft assignments, flight events and operational standards.</p></article><article class="hr-card"><h3>👥 Human Resources</h3><p>Handle staff recruitment, applications, promotions and the pilot experience.</p></article><article class="hr-card"><h3>📣 Community & Events</h3><p>Organize group flights, events, announcements and community activities.</p></article><article class="hr-card"><h3>💻 Web & Technology</h3><p>Maintain the website, technical resources and digital services.</p></article><article class="hr-card"><h3>🎨 Media & Marketing</h3><p>Create promotional graphics, social content and aviation media.</p></article><article class="hr-card"><h3>🛫 Training</h3><p>Help pilots learn procedures, simulator operations and VA policies.</p></article></section>
+<section class="hr-apply" id="apply"><p class="eyebrow">STAFF APPLICATION</p><h2>Apply to join our staff</h2><form class="application" id="hr-form"
+  action="mailto:caribbeanairlinessystem@gmail.com"
+  method="post"
+  enctype="text/plain">
+  <label for="name">Name / Pilot ID</label>
+  <input id="name" name="Name / Pilot ID" required placeholder="e.g. CAW001">
+
+  <label for="department">Department</label>
+  <select id="department" name="Department" required>
+    <option value="">Select a department</option>
+    <option>Flight Operations</option>
+    <option>Human Resources</option>
+    <option>Community & Events</option>
+    <option>Web & Technology</option>
+    <option>Media & Marketing</option>
+    <option>Training</option>
+  </select>
+
+  <label for="experience">Why would you be a good fit?</label>
+  <textarea id="experience" name="Application" required placeholder="Tell us about your experience and what you can contribute."></textarea>
+
+  <button class="btn primary" type="submit">Submit Application</button>
+  <p class="hr-note">Submitting will open the applicant's email program with the application addressed to Caribbean Airlines Virtual HR.</p>
+</form></section></main>
+<footer><div class="brand"><img class="brand-logo" src="logo.png" alt="Caribbean Airlines Virtual"><span><strong>CARIBBEAN AIRLINES</strong><small>VIRTUAL</small></span></div><p>© <span id="year"></span> Caribbean Airlines Virtual.</p><a href="index.html#home">Back to Website</a></footer><script>document.getElementById("year").textContent=new Date().getFullYear();const n=document.getElementById("nav");const t=document.querySelector(".menu-toggle");if(t)t.addEventListener("click",()=>n.classList.toggle("open"));</script></body></html>

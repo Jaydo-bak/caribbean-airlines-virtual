@@ -1,0 +1,131 @@
+:root{
+  --blue:#7b2cbf;
+  --deep:#3c096c;
+  --red:#e83e8c;
+  --yellow:#f7a8d8;
+  --ink:#2d1638;
+  --muted:#765f80;
+  --bg:#faf5fc;
+  --white:#fff;
+  --line:#ead9f0;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}a{text-decoration:none;color:inherit}
+.site-header{position:sticky;top:0;z-index:20;height:76px;padding:0 6%;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:10px}.brand strong{display:block;font-size:13px;letter-spacing:1.1px}.brand small{display:block;font-size:10px;letter-spacing:3px;color:var(--red);font-weight:800}.brand-mark{width:38px;height:38px;display:grid;place-items:center;background:var(--blue);color:#fff;font-weight:900;border-radius:50%}
+nav{display:flex;gap:26px;align-items:center;font-size:14px;font-weight:700}nav a:hover{color:var(--red)}.nav-login{padding:11px 17px;background:var(--blue);color:#fff;border-radius:6px}.menu-toggle{display:none;border:0;background:none;font-size:26px}
+.hero{min-height:650px;display:grid;grid-template-columns:1.05fr .95fr;background:linear-gradient(135deg,#fff 0%,#eef6fa 100%);overflow:hidden}.hero-copy{padding:105px 8% 70px}.eyebrow{font-size:11px;font-weight:900;letter-spacing:3px;color:var(--red);margin:0 0 14px}.hero h1{font-size:clamp(50px,6.5vw,86px);line-height:.98;letter-spacing:-4px;margin:0 0 25px;color:var(--deep)}.hero h1 span{color:var(--red)}.hero-text{font-size:18px;max-width:550px;color:var(--muted)}.hero-actions{display:flex;gap:12px;margin:30px 0 55px}.btn{display:inline-block;padding:14px 22px;border-radius:6px;font-weight:800}.primary{background:var(--red);color:#fff}.ghost{border:1px solid #b8c7d2}.quick-stats{display:flex;gap:45px}.quick-stats b{display:block;font-size:25px;color:var(--blue)}.quick-stats span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+.hero-art{position:relative;background:linear-gradient(#79c7e8 0%,#dff4fb 60%,#0b6983 60%,#07566d 100%);min-height:650px}.sun{position:absolute;width:210px;height:210px;border-radius:50%;background:#f8d25b;right:15%;top:12%;box-shadow:0 0 80px #fff2a8}.cloud{position:absolute;width:180px;height:40px;background:#fff;border-radius:50px;opacity:.8}.cloud:before,.cloud:after{content:"";position:absolute;background:#fff;border-radius:50%}.cloud:before{width:75px;height:75px;left:30px;top:-35px}.cloud:after{width:55px;height:55px;right:25px;top:-25px}.c1{top:25%;left:8%}.c2{top:12%;right:6%;transform:scale(.7)}.aircraft-card{position:absolute;bottom:14%;left:10%;right:10%;background:rgba(255,255,255,.95);padding:22px;border-radius:12px;box-shadow:0 20px 50px #002b3d55}.aircraft-card>div:nth-child(2){display:inline-flex;flex-direction:column;margin-left:10px}.aircraft-card span{font-size:9px;letter-spacing:1px}.aircraft-card strong{color:var(--red);letter-spacing:3px}.tail{display:inline-grid!important;place-items:center;background:var(--blue);color:#fff;width:42px;height:42px;border-radius:50%;font-weight:900}.route-line{display:flex;align-items:center;gap:15px;margin-top:20px}.route-line i{height:1px;background:#aac0cd;flex:1}.aircraft-card small{color:var(--muted)}
+.ticker{background:var(--red);color:#fff;padding:13px;text-align:center;font-size:11px;font-weight:900;letter-spacing:2px}.section{padding:95px 8%}.split{display:grid;grid-template-columns:1fr 1fr;gap:80px}.section h2{font-size:clamp(35px,4vw,58px);line-height:1.05;letter-spacing:-2px;margin:0}.split p:not(.eyebrow){color:var(--muted);font-size:17px}.dark{background:var(--deep);color:#fff}.dark .eyebrow{color:var(--yellow)}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:35px}.filter{border:1px solid #52708a;background:none;color:#fff;padding:10px 16px;border-radius:20px;cursor:pointer}.filter.active{background:#fff;color:var(--deep)}.route-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.route-card{padding:30px;background:#0a3a59;border:1px solid #1e5272;border-radius:8px;transition:.2s}.route-card:hover{transform:translateY(-4px);background:#104b6d}.route-card span,.fleet-card span{font-size:10px;letter-spacing:2px;font-weight:900;color:var(--yellow)}.route-card h3{font-size:28px;margin:15px 0 5px}.route-card p{margin:0;color:#a9c0d0;font-size:13px}
+.fleet-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px}.fleet-card{padding:35px;border:1px solid var(--line);border-radius:10px;background:#fff}.fleet-card.featured{border-top:4px solid var(--red)}.aircraft-icon{font-weight:900;font-size:34px;color:var(--blue);margin-bottom:40px}.fleet-card h3{font-size:23px;margin:0 0 8px}.fleet-card p{color:var(--muted);min-height:70px}.fleet-card span{color:var(--red)}
+.operations{display:grid;grid-template-columns:1fr 1fr;gap:80px;background:#eaf2f6}.ops-panel{background:var(--blue);color:#fff;border-radius:12px;padding:45px}.ops-panel h2{max-width:500px}.ops-buttons{display:flex;gap:12px;margin-top:35px}.ops-buttons a{background:#fff;color:var(--blue);padding:12px 16px;border-radius:5px;font-weight:800;font-size:13px}.ops-buttons a+ a{background:var(--red);color:#fff}.ops-list{display:grid;gap:0}.ops-list div{display:flex;gap:22px;padding:23px 0;border-bottom:1px solid #cad7df}.ops-list b{color:var(--red)}.ops-list strong{display:block}.ops-list span{color:var(--muted)}
+.community{text-align:center;background:var(--white)}.community h2{margin-bottom:18px}.community>p:not(.eyebrow):not(.note){color:var(--muted);max-width:600px;margin:0 auto 30px}.note{font-size:11px;color:#8a98a2;margin-top:18px}
+footer{padding:35px 8%;display:flex;align-items:center;justify-content:space-between;gap:25px;background:#fff;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}footer a{font-weight:800;color:var(--blue)}
+@media(max-width:850px){nav{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;padding:20px 6%;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}nav.open{display:flex}.menu-toggle{display:block}.hero{grid-template-columns:1fr}.hero-art{min-height:420px}.hero-copy{padding-top:75px}.split,.operations{grid-template-columns:1fr;gap:40px}.route-grid,.fleet-grid{grid-template-columns:1fr 1fr}.section-head{align-items:start;gap:20px}.quick-stats{gap:20px}footer{flex-direction:column;align-items:flex-start}}
+@media(max-width:560px){.hero h1{font-size:48px;letter-spacing:-2px}.route-grid,.fleet-grid{grid-template-columns:1fr}.hero-actions,.ops-buttons{flex-direction:column}.quick-stats{flex-wrap:wrap}.section{padding:70px 6%}}
+.brand-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+.island-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 55%;
+  object-fit: cover;
+  object-position: center bottom;
+  z-index: 1;
+  pointer-events: none;
+}
+.brand-logo {
+  width: 180px;
+  height: auto;
+  display: block;
+}
+/* =========================
+   DARK MODE
+   ========================= */
+
+body.dark-mode {
+  --ink: #f8eefe;
+  --muted: #c9b5d1;
+  --bg: #12091a;
+  --white: #1d1027;
+  --line: #432d4f;
+  --deep: #160820;
+}
+
+/* Header */
+body.dark-mode .site-header {
+  background: rgba(18, 9, 26, 0.96);
+  border-color: #432d4f;
+}
+
+body.dark-mode nav a {
+  color: #f8eefe;
+}
+
+/* Hero */
+body.dark-mode .hero {
+  background: linear-gradient(
+    135deg,
+    #180a22 0%,
+    #2a0d3d 50%,
+    #12091a 100%
+  );
+}
+
+/* Sections */
+body.dark-mode .section:not(.dark) {
+  background: #12091a;
+}
+
+body.dark-mode .fleet-card {
+  background: #1d1027;
+  border-color: #432d4f;
+}
+
+body.dark-mode .operations {
+  background: #1a0d24;
+}
+
+/* Community */
+body.dark-mode .community {
+  background: #12091a;
+}
+
+/* Footer */
+body.dark-mode footer {
+  background: #0d0612;
+  border-color: #432d4f;
+}
+
+/* Toggle button */
+.theme-toggle {
+  border: 0;
+  background: #f3e8ff;
+  color: #3c096c;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.08);
+}
+
+body.dark-mode .theme-toggle {
+  background: #3c096c;
+  color: #f7a8d8;
+}
+.fleet-link{display:block;color:inherit;text-decoration:none;cursor:pointer}.fleet-link em{display:block;margin-top:20px;font-style:normal;font-size:12px;font-weight:900;color:var(--red)}.fleet-link:hover{transform:translateY(-5px)}
+.aircraft-page{min-height:calc(100vh - 76px);background:radial-gradient(circle at 84% 14%,rgba(232,62,140,.18),transparent 28%),linear-gradient(135deg,#fff 0%,#f8e8f5 48%,#eadcf7 100%)}
+.aircraft-hero{padding:90px 8% 65px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.aircraft-hero h1{font-size:clamp(44px,6vw,76px);line-height:.98;letter-spacing:-3px;margin:0 0 20px;color:var(--deep)}.aircraft-hero h1 span{color:var(--red)}.aircraft-hero .lead{color:var(--muted);font-size:18px;max-width:620px}.aircraft-visual{min-height:340px;border-radius:18px;display:grid;place-items:center;background:linear-gradient(135deg,#3c096c,#e83e8c);color:#fff;box-shadow:0 25px 60px rgba(60,9,108,.25);position:relative;overflow:hidden}.aircraft-code{font-size:clamp(70px,9vw,125px);font-weight:950;letter-spacing:-6px}.aircraft-info{padding:75px 8%;background:var(--white)}.aircraft-info h2{font-size:clamp(34px,4vw,54px);margin:0 0 15px;letter-spacing:-2px}.aircraft-description{max-width:900px;color:var(--muted);font-size:17px}.spec-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:35px}.spec{padding:24px;border:1px solid var(--line);border-radius:10px;background:var(--bg)}.spec strong{display:block;font-size:24px;color:var(--blue)}.spec span{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px}.back-link{display:inline-block;margin-top:28px;font-weight:800;color:var(--blue)}body.dark-mode .aircraft-page{background:linear-gradient(135deg,#12091a,#2a0d3d)}body.dark-mode .aircraft-info{background:#12091a}body.dark-mode .spec{background:#1d1027;border-color:#432d4f}@media(max-width:850px){.aircraft-hero{grid-template-columns:1fr}.spec-grid{grid-template-columns:1fr 1fr}}@media(max-width:560px){.spec-grid{grid-template-columns:1fr}}
+
+/* RESOURCES PAGE */
+.resources-page{min-height:calc(100vh - 76px);background:radial-gradient(circle at 85% 10%,rgba(232,62,140,.16),transparent 30%),linear-gradient(135deg,#fff 0%,#f8e8f5 48%,#eadcf7 100%)}
+.resources-hero{padding:90px 8% 45px;max-width:1100px}.resources-hero h1{font-size:clamp(46px,6vw,76px);line-height:.98;letter-spacing:-3px;margin:0 0 20px;color:var(--deep)}.resources-hero h1 span{color:var(--red)}.resources-hero .lead{max-width:760px;color:var(--muted);font-size:18px}.resources-library{padding:15px 8% 90px}.resource-group{margin-top:35px}.resource-group h2{font-size:clamp(30px,4vw,44px);margin-bottom:8px}.resource-group>p{color:var(--muted);max-width:750px}.resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:24px}.resource-card{display:flex;flex-direction:column;min-height:270px;padding:28px;border:1px solid var(--line);border-radius:14px;background:var(--white);color:var(--ink);text-decoration:none;transition:.2s}.resource-card:hover{transform:translateY(-5px);border-color:var(--red);box-shadow:0 18px 45px rgba(60,9,108,.12)}.resource-badge{align-self:flex-start;padding:7px 10px;border-radius:999px;background:rgba(232,62,140,.1);color:var(--red);font-size:10px;letter-spacing:1.5px;font-weight:900}.resource-card h3{margin:22px 0 8px;font-size:23px}.resource-card p{color:var(--muted);font-size:14px;flex:1}.resource-action{font-weight:900;color:var(--red);font-size:13px;margin-top:20px}.resource-notice{margin-top:45px;padding:22px 24px;border-left:4px solid var(--red);background:rgba(232,62,140,.07);border-radius:8px;color:var(--muted)}body.dark-mode .resources-page{background:linear-gradient(135deg,#12091a,#2a0d3d)}body.dark-mode .resource-card{background:#1d1027;border-color:#432d4f}body.dark-mode .resource-notice{background:#1d1027}@media(max-width:900px){.resource-grid{grid-template-columns:1fr 1fr}}@media(max-width:600px){.resource-grid{grid-template-columns:1fr}}
